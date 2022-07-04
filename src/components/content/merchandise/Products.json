@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Sách Grimgar - Ảo Ảnh Và Tro Tàn - Tập 6",
+        "retail": "85.000",
+        "price": "68.000",
+        "kind": "Sách",
+        "tags": ["Sách văn học","Sách giáo dục"],
+        "dateCreate": "2022-06-16",
+        "description": "something",
+        "sold": 320,
+        "shipping": true,
+        "from": "Hà Nội",
+        "rating": 4.7,
+        "image": "https://cf.shopee.vn/file/63339b1b8d21b52b9f1c1165ae7e2afe"
+    },
+    {
+        "id": 2,
+        "name": "[Mã LIFEMALL995 giảm 10% đơn 99K] Sách - Amrita (Tái Bản 2019)",
+        "retail": "109.000",
+        "price": "81.000",
+        "kind": "Sách",
+        "tags": ["Sách văn học","Sách giáo dục", "Sách giảm giá"],
+        "dateCreate": "2022-06-20",
+        "description": "something",
+        "sold": 1000,
+        "shipping": false,
+        "from": "Hà Nội",
+        "rating": 5,
+        "image": "https://cf.shopee.vn/file/d6e5ca58c9464b7b8513288d2bd92859"
+    }
+]

@@ -1,0 +1,170 @@
+.merchandise {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0;
+    border-radius: 2px;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+    transform: translateY(0);
+    transition: transform ease .1s;
+    will-change: transform;
+}
+
+.merchandise:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 26px rgba(0, 0, 0, .05);
+    transition: box-shadow ease .1s;
+    transform: translateY(-1px);
+}
+
+.merchandise__img {
+    display: block;
+    padding-top: 100%;
+    background: left top / contain no-repeat;
+}
+
+.merchandise__name {
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin: 0;
+    margin: 8px 8px 4px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    height: 3.2rem;
+    overflow: hidden;
+}
+
+.merchandise__tag {
+    height: 16px;
+}
+
+.merchandise__price-and-ship {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 8px 8px 0;
+}
+
+.merchandise__price__retail {
+    display: none;
+    margin-right: 4px;
+    font-size: 1.4rem;
+    color: #7c7c7c;
+    text-decoration: line-through;
+}
+
+.merchandise__price.merchandise__price__discount .merchandise__price__retail {
+    display: inline-block;
+}
+
+.merchandise__price__sale {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+
+.merchandise__ship {
+    display: none;
+}
+
+.merchandise__ship.merchandise__ship__have {
+    display: block;
+}
+
+.merchandise__rating-and-sold {
+    display: flex;
+    margin: 12px 10px 0;
+    width: 100%;
+    height: 14px;
+}
+
+.merchandise__rating {
+    width: 200xp;
+}
+
+.merchandise__had-sold {
+    display: flex;
+    font-size: 1.2rem;
+    line-height: 1;
+    margin-left: 4px;
+}
+
+.merchandise__ship-from {
+    margin: 0;
+    padding: 8px;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--text-color);
+}
+
+.merchandise__top-left-label {
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    color: var(--primary-color);
+    background-color: currentColor;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.merchandise__top-left-label::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 0;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-style: solid;
+    border-color: currentColor currentColor transparent transparent;
+    filter: brightness(60%);
+}
+
+.merchandise__top-left-label__title {
+    padding: 0 4px;
+    color: var(--white-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.merchandise__discount-lable {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 36px;
+    height: 32px;
+    padding: 4px 2px 3px;
+    background-color: rgba(255, 212, 36, .9);
+}
+
+.merchandise__discount-lable__percent {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+}
+
+.merchandise__discount-lable__percent::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 32px;
+    color: rgba(255, 212, 36, .9);
+    border-width: 0px 18px 6px;
+    border-style: solid;
+    border-color: transparent currentColor;
+}
+
+.merchandise__discount-lable__title {
+    color: var(--white-color);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+}

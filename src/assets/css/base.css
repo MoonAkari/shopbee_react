@@ -1,0 +1,269 @@
+:root {
+    --black-color: #000;
+    --white-color: #fff;
+    --text-color: #333;
+    --boder-color: #dbdbdb;
+    --primary-color: #f53f2d;
+    --star-color: #FFD700;
+}
+
+* {
+    box-sizing: inherit;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.grid__column-2-12 {
+    width: 16.6667%;
+    padding-left: 11px;
+    padding-right: 17px;
+}
+
+.grid__column-2-10 {
+    width: 20%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.grid__column-10 {
+    width: 83.3332%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.open__block {
+    display: block !important;
+}
+
+.close__block {
+    display: none !important;
+}
+
+.btn-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 2px;
+    height: 34px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn-form-white-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 2px;
+    height: 34px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    cursor: pointer;
+}
+
+.input-form {
+    display: block;
+    width: 100%;
+    padding: 12px 8px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    outline: none;
+}
+
+.input-form:focus {
+    border-color: #888;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* option list */
+
+.option-list {
+    position: relative;
+    display: flex;
+    justify-content: space-between !important;
+    width: 200px;
+    padding: 0 12px;
+    margin-left: 10px;
+    cursor: pointer;
+    z-index: 1;
+    background-color: var(--white-color);
+}
+
+.option-list::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 10px;
+}
+
+.option-list__defaul-value {
+    display: flex;
+    justify-content: flex-start !important;
+}
+
+.option-list__option-value {
+    display: none;
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    width: 100%;
+    padding: 8px 0;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .15);
+}
+
+.option-list:hover .option-list__option-value {
+    display: block;
+}
+
+.sort__by-filter__price__kind a {
+    display: flex;
+    align-items: center;
+    height: 34px;
+    width: 100%;
+    padding-left: 16px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    border-radius: 2px;
+    color: var(--text-color);
+}
+
+.sort__by-filter__price__kind a:hover {
+    color: var(--primary-color);
+}
+
+/* END option list */
+
+/* rating by percent */
+.rating {
+    position: relative;
+    display: flex;
+    top: 0;
+    font-size: .9rem;
+    color: var(--star-color);
+}
+
+.rating--percent {
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: calc(50px * calc(90/100));
+    top: 0;
+    left: 0;
+    font-size: .9rem;
+    color: var(--star-color);
+}
+
+/* END rating by percent */
+
+/* điều hướng trang */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination ul {
+    list-style: none;
+}
+
+.pagination li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 12px;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2rem;
+    color: #ababab
+}
+
+.pagination__number__link {
+    padding: 5px 14px;
+    color: #ababab;
+    cursor: pointer;
+}
+
+.pagination__number.pagination__number--current>a {
+    color: var(--white-color);
+}
+
+.pagination__number.pagination__number--current {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+/* END điều hướng trang */
+
+@keyframes scaleFadeIn0 {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(.7);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
